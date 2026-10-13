@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>loading mask</title>
+  <style>
+    .ui-loading-mask.is-fullscreen {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <button id="go" type="button">继续</button>
+  <div class="ui-loading-mask is-fullscreen" id="mask"></div>
+  <script>
+    document.getElementById("go").addEventListener("click", function () {
+      document.body.setAttribute("data-clicked", "1");
+    });
+  </script>
+</body>
+</html>

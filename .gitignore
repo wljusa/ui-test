@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.DS_Store
+report/
+**/screenshots/
+storage_state*.json
+.env
+config/settings.yaml
